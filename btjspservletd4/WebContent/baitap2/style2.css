@@ -1,0 +1,90 @@
+.wrapper{
+	width: 540px;
+	margin: 50px auto;
+}
+.wrapper .header{
+	background-color: #00A19C;
+	height: 40px;
+}
+.wrapper .header h2{
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.wrapper .tieude{
+	background-color: #DEDEDE;
+	border: 1px solid #D6D6D6;
+	padding: 8px 5px;
+}
+.wrapper .tieude .left{
+	width: 140px;
+	float: left;
+}
+.wrapper .tieude .left .th{
+	text-align: center;
+	font-weight: bold;
+
+}
+.wrapper .tieude .right{
+	width: 100px;
+	float: right;
+}
+.wrapper .tieude .right .th{
+	text-align: center;
+	font-weight: bold;
+}
+.wrapper .thongtin{
+	border-right: 1px solid #D6D6D6;
+	padding: 20px 5px;
+}
+.wrapper .thongtin .left{
+	width: 200px;
+	float: left;
+}
+.wrapper .thongtin .left .ten{
+	text-align: left;
+	color: #996A74;
+	text-decoration: underline;
+}
+.wrapper .thongtin .left2{
+	width: 120px;
+	float: left;
+}
+.wrapper .thongtin .left2 p{
+	text-align: left;
+}
+.wrapper .thongtin .left2 p #soluong{
+	width: 53px;
+}
+.wrapper .thongtin .right{
+	width: 85px;
+	float: right;
+}
+.wrapper .thongtin .right p{
+	text-align: right;
+}
+.wrapper .tinhtien{
+	border-top: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D6D6D6;
+	border-right: 1px solid #D6D6D6;
+	padding: 8px 5px;
+}
+.wrapper .tinhtien .left1{
+	width: 420px;
+	float: left;
+}
+.wrapper .tinhtien .left1 p{
+	text-align: right;
+	color: #996A74;
+}
+.wrapper .tinhtien .right{
+	float: right;
+}
+.wrapper .tinhtien .right p{
+	text-align: right;
+}
+.clr{
+	clear: both;
+}

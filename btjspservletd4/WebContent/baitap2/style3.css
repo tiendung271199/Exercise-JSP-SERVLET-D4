@@ -1,0 +1,38 @@
+.wrapper {
+	width: 450px;
+	margin: 50px auto;
+}
+
+.wrapper .title {
+	border: 2px solid red;
+	background-color: #00CC00;
+	height: 50px;
+}
+
+.wrapper .title h2 {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.wrapper .main {
+	border: 2px solid yellow;
+	background-color: #66CCFF;
+	padding: 20px 40px;
+}
+
+.wrapper .main ul {
+	list-style-type: decimal;
+}
+
+.wrapper .main ul li {
+	margin: 15px 0px;
+}
+
+.wrapper .main ul li a {
+	text-decoration: none;
+	font-style: italic;
+	color: red;
+}
