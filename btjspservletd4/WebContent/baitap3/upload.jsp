@@ -17,7 +17,7 @@
 			<form action="<%=request.getContextPath() %>/up-load-image" method="post" id="form" enctype="multipart/form-data">
 				<%
 					if (request.getParameter("err") != null) {
-						out.print("<p style='color: red; font-weight: bold'>Vui lòng chọn hình ảnh</p>");
+						out.print("<p style='color: red; font-weight: bold'>Vui lòng chọn file hình ảnh</p>");
 					}
 				%>
 				<p>

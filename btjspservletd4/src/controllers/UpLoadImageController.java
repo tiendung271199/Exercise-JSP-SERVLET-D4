@@ -3,6 +3,7 @@ package controllers;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
@@ -18,6 +19,7 @@ import javax.servlet.http.Part;
 public class UpLoadImageController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final String DIR_UPLOAD = "hinhanh";
+	private ArrayList<String> listFileName = new ArrayList<String>();
 
 	public UpLoadImageController() {
 		super();
@@ -40,6 +42,10 @@ public class UpLoadImageController extends HttpServlet {
 		try {
 			Part filePart = request.getPart("images");
 			fileName = filePart.getSubmittedFileName();
+			if (!fileName.endsWith(".jpg") && !fileName.endsWith(".jpeg") && !fileName.endsWith(".png")
+					&& !fileName.endsWith(".gif")) {
+				throw new Exception();
+			}
 			String contextRoot = request.getServletContext().getRealPath("");
 			dirUpLoad = contextRoot + DIR_UPLOAD;
 			File saveDir = new File(dirUpLoad);
@@ -63,9 +69,11 @@ public class UpLoadImageController extends HttpServlet {
 		if (oldFile.renameTo(newFile)) {
 			fileName = fileReName;
 		}
+		
+		listFileName.add(fileName);
 
 		HttpSession session = request.getSession();
-		session.setAttribute("filename", fileName);
+		session.setAttribute("listfilename", listFileName);
 
 		response.sendRedirect(request.getContextPath() + "/baitap3/showimage.jsp");
 	}
